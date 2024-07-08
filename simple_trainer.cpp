@@ -27,10 +27,10 @@ int main(int argc, char **argv){
         ("cpu", "Force CPU execution")
         ("width", "Test image width", cxxopts::value<int>()->default_value("256"))
         ("height", "Test image height", cxxopts::value<int>()->default_value("256"))
-        ("iters", "Number of iterations", cxxopts::value<int>()->default_value("1000"))
+        ("iters", "Number of iterations", cxxopts::value<int>()->default_value("100"))
         ("points", "Number of gaussians", cxxopts::value<int>()->default_value("100000"))
         ("lr", "Learning rate", cxxopts::value<float>()->default_value("0.01"))
-        ("render", "Save rendered images to folder", cxxopts::value<std::string>()->default_value(""))
+        ("render", "Save rendered images to folder", cxxopts::value<std::string>()->default_value("debug_out"))
         ("h,help", "Print usage")
         ("version", "Print version")
         ;
